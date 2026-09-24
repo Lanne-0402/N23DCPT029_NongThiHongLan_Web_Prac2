@@ -1,0 +1,359 @@
+{
+  "info": {
+    "_postman_id": "2cedee42-28f0-4dd3-bb5e-a05952cbd321",
+    "name": "Order Managemnet API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58381640",
+    "_collection_link": "https://go.postman.co/collection/58381640-2cedee42-28f0-4dd3-bb5e-a05952cbd321?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:5000/api/orders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"customerName\": \"Tran Thi Bich\",\r\n  \"customerEmail\": \"bich.tran@example.com\",\r\n  \"items\": [\r\n    { \"productName\": \"Ban phim co Custom\", \"quantity\": 1, \"unitPrice\": 5000000 },\r\n    { \"productName\": \"Lot chuot Size XXL\", \"quantity\": 1, \"unitPrice\": 500000 }\r\n  ],\r\n  \"totalAmount\": 5500000,\r\n  \"status\": \"confirmed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/orders",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"customerName\": \"Nguyen Van An\",\r\n  \"customerEmail\": \"an.nguyen@example.com\",\r\n  \"items\": [\r\n    { \"productName\": \"Man hinh Gaming 2K\", \"quantity\": 1, \"unitPrice\": 15000000 }\r\n  ],\r\n  \"totalAmount\": 15000000,\r\n  \"status\": \"pending\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/orders",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"customerName\": \"Tran Thi Bich\",\r\n  \"customerEmail\": \"bich.tran@example.com\",\r\n  \"items\": [\r\n    { \"productName\": \"Ban phim co Custom\", \"quantity\": 1, \"unitPrice\": 5000000 },\r\n    { \"productName\": \"Lot chuot Size XXL\", \"quantity\": 1, \"unitPrice\": 500000 }\r\n  ],\r\n  \"totalAmount\": 5500000,\r\n  \"status\": \"confirmed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/orders",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"customerName\": \"Nguyen Hoang Long\",\r\n  \"customerEmail\": \"long.nh@example.com\",\r\n  \"items\": [\r\n    { \"productName\": \"Card do hoa RTX 4070\", \"quantity\": 1, \"unitPrice\": 30000000 },\r\n    { \"productName\": \"Gia do VGA\", \"quantity\": 2, \"unitPrice\": 1000000 }\r\n  ],\r\n  \"totalAmount\": 32000000,\r\n  \"status\": \"pending\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/orders",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"customerName\": \"Le Thi Mai\",\r\n  \"customerEmail\": \"mai.le@example.com\",\r\n  \"items\": [\r\n    { \"productName\": \"Tai nghe nhet tai Type-C\", \"quantity\": 2, \"unitPrice\": 600000 }\r\n  ],\r\n  \"totalAmount\": 1200000,\r\n  \"status\": \"delivered\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Loc status pending",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/orders/search?name=Nguyen",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Nguyen"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Loc ho Nguyen",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/orders?status=pending",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "pending"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Loc tang dan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/orders?sort=asc",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "sort",
+              "value": "asc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Loc giam dan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders?sort=desc",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "sort",
+              "value": "desc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/orders",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"status\": \"confirmed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders/6ab4db82d247dc4f4b37bebc",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders",
+            "6ab4db82d247dc4f4b37bebc"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/orders",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"customerName\": \"Nguyen Van A\",\r\n\"customerEmail\": \"vana@email.com\",\r\n\"items\": [\r\n{ \"productName\": \"Laptop Dell XPS\", \"quantity\": 1, \"unitPrice\":\r\n25000000 },\r\n{ \"productName\": \"Chuot Logitech\", \"quantity\": 2, \"unitPrice\":\r\n500000 }\r\n],\r\n\"totalAmount\": 26000000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/orders/6ab4dc2ad247dc4f4b37beca",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"status\": \"confirmed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders/6ab4dc2ad247dc4f4b37beca",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders",
+            "6ab4dc2ad247dc4f4b37beca"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
