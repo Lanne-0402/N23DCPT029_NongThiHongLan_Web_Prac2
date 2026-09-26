@@ -354,6 +354,64 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/orders",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"customerName\": \"Le Thi Thu\",\r\n  \"customerEmail\": \"thu.le@example.com\",\r\n  \"items\": [\r\n    { \"productName\": \"Chuot may tinh\", \"quantity\": 2, \"unitPrice\": 200000 }\r\n  ],\r\n  \"totalAmount\": 500000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/orders",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"customerName\": \"Le Thi Thu\",\r\n  \"customerEmail\": \"thu.le@example.com\",\r\n  \"items\": [\r\n    { \"productName\": \"Chuot may tinh\", \"quantity\": 2, \"unitPrice\": 200000 }\r\n  ],\r\n  \"totalAmount\": 400000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "orders"
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
